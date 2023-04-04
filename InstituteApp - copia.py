@@ -22,7 +22,7 @@ MDBoxLayout:
 
             MDBottomNavigationItem:
                 name: 'screen 1'
-                text: 'Files'
+                text: 'Documentación'
                 theme_font_styles: "H3"
                 icon: 'file'
                 #badge_icon: "numeric-10"
@@ -52,8 +52,7 @@ MDBoxLayout:
                             pos_hint: {"center_x": .5, "center_y": .5}
                             on_release:
                                 import webbrowser
-                                webbrowser.open('https://drive.google.com/drive/folders/1hazeaTHs0JlcSZ_Q3WchiY0UmRIwTYfd?hl=es')
-                                print('Yeaaaaaaaaah!! It Worksssssss')                            
+                                webbrowser.open('https://drive.google.com/drive/folders/1hazeaTHs0JlcSZ_Q3WchiY0UmRIwTYfd?hl=es')                        
                         MDRaisedButton:
                             text: "Resoluciones"
                             text_color: "black"
@@ -62,6 +61,9 @@ MDBoxLayout:
                             size_hint: .8, None
                             # size: "100dp", "80dp"
                             pos_hint: {"center_x": .5, "center_y": .5}
+                            on_release:
+                                import webbrowser
+                                webbrowser.open('https://drive.google.com/drive/folders/1pSP9JPGlgP1vCY2IZ4oz9PL5XPyU-Yq2?hl=es')
                         MDRaisedButton:
                             text: "Instructivos"
                             text_color: "black"
@@ -70,6 +72,9 @@ MDBoxLayout:
                             size_hint: .8, None
                             # size: "100dp", "80dp"
                             pos_hint: {"center_x": .5, "center_y": .5}
+                            on_release:
+                                import webbrowser
+                                webbrowser.open('https://drive.google.com/drive/folders/1h2gJJkliW06QwGTgIUFwo3O6eCLteA4V?hl=es')
                         MDRaisedButton:
                             text: "Web DGES Corrientes"
                             text_color: "black"
@@ -81,18 +86,10 @@ MDBoxLayout:
                             on_release:
                                 import webbrowser
                                 webbrowser.open('http://www.dgescorrientes.net/')
-                        MDRaisedButton:
-                            text: "A"
-                            text_color: "black"
-                            md_bg_color: "lightblue"
-                            font_size: "20sp"
-                            size_hint: .8, None
-                            # size: "100dp", "80dp"
-                            pos_hint: {"center_x": .5, "center_y": .5}
                                   
             MDBottomNavigationItem:
                 name: 'screen 2'
-                text: 'Home'
+                text: 'Novedades'
                 icon: 'home'
                 #badge_icon: "numeric-5"
 
@@ -102,7 +99,7 @@ MDBoxLayout:
 
             MDBottomNavigationItem:
                 name: 'screen 3'
-                text: 'News'
+                text: 'Info'
                 icon: 'email-newsletter'
 
                 MDLabel:
